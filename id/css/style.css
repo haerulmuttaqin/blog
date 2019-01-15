@@ -466,7 +466,7 @@ code {
 
 .flag-lang {
   list-style-type: none !important;
-  width: 30px;
+  width: 30px !important;
   display: inline-block !important;
   padding: 0px !important;
 }
