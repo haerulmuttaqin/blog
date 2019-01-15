@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://haerulmuttaqin.site/blog/login-register/</loc>
+    <loc>https://haerulmuttaqin.site/en/blog/login-register/</loc>
     <lastmod>2019-01-14T23:03:13+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -13,22 +13,22 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://haerulmuttaqin.site/blog/login-register/"
+                href="https://haerulmuttaqin.site/en/blog/login-register/"
                 />
   </url>
   
   <url>
-    <loc>https://haerulmuttaqin.site/about/</loc>
+    <loc>https://haerulmuttaqin.site/en/about/</loc>
     <lastmod>2018-10-04T01:32:14+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://haerulmuttaqin.site/contact/</loc>
+    <loc>https://haerulmuttaqin.site/en/contact/</loc>
     <lastmod>2018-10-04T01:32:14+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://haerulmuttaqin.site/blog/</loc>
+    <loc>https://haerulmuttaqin.site/en/blog/</loc>
     <lastmod>2019-01-14T23:03:13+07:00</lastmod>
     <priority>0</priority>
     <xhtml:link
@@ -39,12 +39,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://haerulmuttaqin.site/blog/"
+                href="https://haerulmuttaqin.site/en/blog/"
                 />
   </url>
   
   <url>
-    <loc>https://haerulmuttaqin.site/categories/</loc>
+    <loc>https://haerulmuttaqin.site/en/categories/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -54,12 +54,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://haerulmuttaqin.site/categories/"
+                href="https://haerulmuttaqin.site/en/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://haerulmuttaqin.site/</loc>
+    <loc>https://haerulmuttaqin.site/en/</loc>
     <lastmod>2019-01-14T23:03:13+07:00</lastmod>
     <priority>0</priority>
     <xhtml:link
@@ -70,12 +70,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://haerulmuttaqin.site/"
+                href="https://haerulmuttaqin.site/en/"
                 />
   </url>
   
   <url>
-    <loc>https://haerulmuttaqin.site/tags/mysql/</loc>
+    <loc>https://haerulmuttaqin.site/en/tags/mysql/</loc>
     <lastmod>2019-01-14T23:03:13+07:00</lastmod>
     <priority>0</priority>
     <xhtml:link
@@ -86,12 +86,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://haerulmuttaqin.site/tags/mysql/"
+                href="https://haerulmuttaqin.site/en/tags/mysql/"
                 />
   </url>
   
   <url>
-    <loc>https://haerulmuttaqin.site/tags/php/</loc>
+    <loc>https://haerulmuttaqin.site/en/tags/php/</loc>
     <lastmod>2019-01-14T23:03:13+07:00</lastmod>
     <priority>0</priority>
     <xhtml:link
@@ -102,12 +102,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://haerulmuttaqin.site/tags/php/"
+                href="https://haerulmuttaqin.site/en/tags/php/"
                 />
   </url>
   
   <url>
-    <loc>https://haerulmuttaqin.site/tags/</loc>
+    <loc>https://haerulmuttaqin.site/en/tags/</loc>
     <lastmod>2019-01-14T23:03:13+07:00</lastmod>
     <priority>0</priority>
     <xhtml:link
@@ -118,12 +118,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://haerulmuttaqin.site/tags/"
+                href="https://haerulmuttaqin.site/en/tags/"
                 />
   </url>
   
   <url>
-    <loc>https://haerulmuttaqin.site/tags/volley/</loc>
+    <loc>https://haerulmuttaqin.site/en/tags/volley/</loc>
     <lastmod>2019-01-14T23:03:13+07:00</lastmod>
     <priority>0</priority>
     <xhtml:link
@@ -134,7 +134,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://haerulmuttaqin.site/tags/volley/"
+                href="https://haerulmuttaqin.site/en/tags/volley/"
                 />
   </url>
   
