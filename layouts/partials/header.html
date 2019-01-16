@@ -1,0 +1,49 @@
+<div id="index-banner" class="parallax-container">
+  <nav class="nav-first" role="navigation">
+    <div class="nav-wrapper container">
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+        <i class="material-icons white-text">menu</i>
+      </a>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger-first">
+        <i class="material-icons white-text">menu</i>
+      </a>
+
+      <ul class="right hide-on-med-and-down menu-navigasi" id="menu-first">
+        <li class="waves-effect waves-blue"><a href="{{.Site.BaseURL}}/blog"> {{ .Language.Params.blog }}</a></li>
+        <li class="waves-effect waves-blue"><a href="{{.Site.BaseURL}}/about"> {{ .Language.Params.about }}</a></li>
+        <li class="waves-effect waves-blue"><a href="{{.Site.BaseURL}}/contact"> {{ .Language.Params.contact }}</a></li>
+        <div class="lang">{{ range $.Site.Home.AllTranslations }}
+            <li class="flag-lang">
+              <a class="flag-lang tooltipped" data-position="right" data-tooltip="{{.Language.LanguageName}}" href="{{ .Permalink }}">
+                  <img class="img-flag-lang" src="{{.Site.BaseURL}}{{ .Language.Params.icon }}"></a>
+              </a>
+            </li>
+            {{ end }}
+          </div>
+      </ul>
+
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="section no-pad-bot">
+      <div class="header">
+        <div class="white-text">
+          <span class="header-title">{{ .Site.Title }}</span>
+        </div>
+        <div class="row">
+          <h5 class="header-subtitle">
+            I'm practicing <b>Software Development,</b> want to - <br>follow<b>?</b> <u> come on</u>
+          </h5>
+        </div>
+        <div class="row">
+          <a href="" class="header-button btn-large waves-effect waves-light blue">
+            {{.Language.Params.getstarted}}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parallax"><img src="{{.Site.BaseURL}}/img/header-bg.svg" alt="Banner Haerul"></div>
+</div>
+<img class="parallax-bottom" src="{{.Site.BaseURL}}/img/header-bottom.svg" alt="Banner Haerul M">

@@ -1,0 +1,64 @@
+<div class="navbar-fixed">
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+
+            <a id="logo-container" href="{{.Site.BaseURL}}" class="brand-logo left grey-text text-darken-3 flow-text logo-auto">
+                <img src="{{ .Site.BaseURL }}/img/logo.png">
+                <span class="site-title"> {{ .Site.Title }} </span>
+            </a>
+
+            <ul class="right hide-on-med-and-down menu-navigasi">
+                <li class="waves-effect waves-blue"><a class="grey-text text-darken-3" href="{{.Site.BaseURL}}/blog">{{ .Language.Params.blog }}</a></li>
+                <li class="waves-effect waves-blue"><a class="grey-text text-darken-3" href="{{.Site.BaseURL}}/about">{{ .Language.Params.about }}</a></li>
+                <li class="waves-effect waves-blue"><a class="grey-text text-darken-3" href="{{.Site.BaseURL}}/contact">{{ .Language.Params.contact }}</a></li>
+                <div class="lang">
+                    {{ if .IsTranslated }}
+                    {{ i18n "translations" }}</span>
+                    {{ range .Translations }}
+                        <li class="flag-lang">
+                            <a class="flag-lang tooltipped" data-position="right" data-tooltip="{{.Lang }}" href="{{ .Permalink }}">
+                                <img class="img-flag-lang" src="{{.Site.BaseURL}}{{ .Language.Params.icon }}">
+                            </a>
+                        </li>
+                        {{ end}}
+                    {{ end }}
+                </div>
+            </ul>
+
+
+        </div>
+    </nav>
+</div>
+
+
+<ul id="nav-mobile" class="sidenav">
+    <br>
+    <div class="user-view">
+        <a href="{{.Site.BaseURL}}" class="">
+            <img class="circle" src="{{ .Site.BaseURL }}/img/logo.png">
+        </a>
+    </div>
+    <br>
+    <hr>
+    <li class="waves-effect waves-blue"><a class="grey-text text-darken-3" href="{{.Site.BaseURL}}">Home</a></li>
+    <li class="waves-effect waves-blue"><a class="grey-text text-darken-3" href="{{.Site.BaseURL}}/blog">{{ .Language.Params.blog }}</a></li>
+    <li class="waves-effect waves-blue"><a class="grey-text text-darken-3" href="{{.Site.BaseURL}}/about">{{ .Language.Params.about }}</a></li>
+    <li class="waves-effect waves-blue"><a class="grey-text text-darken-3" href="{{.Site.BaseURL}}/contact">{{ .Language.Params.contact }}</a></li>
+    
+    <li>
+        <a class="flag-lang">
+                    
+        {{ if .IsTranslated }}
+        {{ range .Translations }}
+                <a class=" flag-lang tooltipped" data-position="right" data-tooltip="{{.Lang }}" href="{{ .Permalink }}">
+                    <img class="img-flag-lang" src="{{.Site.BaseURL}}{{ .Language.Params.icon }}">
+                </a>
+            {{ end}}
+        {{ end }}
+            
+        </a>
+    </li>
+</ul>
