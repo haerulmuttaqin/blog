@@ -2,3 +2,7 @@
 	path = haerulmuttaqin.github.io
 	url = https://github.com/haerulmuttaqin/haerulmuttaqin.github.io.git
 	branch = master
+[submodule "public"]
+	path = public
+	url = https://github.com/haerulmuttaqin/haerulmuttaqin.github.io.git
+	branch = master
