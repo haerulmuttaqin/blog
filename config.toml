@@ -31,12 +31,13 @@ googleAnalytics = ""
     description = "Hello, saya Haerul Muttaqin."
 
     # When using mulitlingual website, disable the switch language button.
-    disableLanguageSwitchingButton = true
+    # disableLanguageSwitchingButton = true
 
+languageCode = "id"
 # English is the default language
 defaultContentLanguage = "id"
 # Force to have /en/my-page and /fr/my-page routes, even for default language.
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 
 [Languages]
 [Languages.id]
