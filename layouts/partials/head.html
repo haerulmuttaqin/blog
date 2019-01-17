@@ -1,0 +1,23 @@
+<title>{{ .Title }} | haerulmuttaqin.com</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta content="#4285f4" name="theme-color">
+{{ template "_internal/schema.html" . }}
+{{ template "_internal/google_news.html" . }}
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
+
+<!-- Icon -->
+<link rel="icon" href="{{ .Site.BaseURL }}/img/logo.png" />
+
+<link href="{{ .Site.BaseURL }}/css/prism.css" type="text/css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono:300,400,500|Google+Sans:300,400|Material+Icons|Google+Sans+Display:100,200,300,400,500" rel="stylesheet">
+<link href="{{ .Site.BaseURL }}/css/materialize.css" type="text/css" rel="stylesheet" />
+<link href="{{ .Site.BaseURL }}/css/style.css" type="text/css" rel="stylesheet" />
+<link href="{{ .Site.BaseURL }}/css/owl.carousel.css" type="text/css" rel="stylesheet">
+{{/*  <link href="/css/bootstrap.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>  */}}
+<!-- Taru kode Google Analytic di sini, karena menurut aturan harus di dalam Head -->
+{{ template "_internal/google_analytics.html" . }}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+    <body>
+
+        {{ partial "nav.html" . }}
+        {{ partial "header.html" . }}
+
+        <div class="container mb-5">
+            <div class="row">
+
+                <div class="col-sm-12 col-lg-8 mb-5 card">
+                    <article>
+                        <div class="">
+                           <div class="card-body p-md-5">
+                                
+                               <div class="post-header mb-5">
+                                    
+                                    <div class="mb-3">
+                                        <img src="{{ .Site.Author.image }}" class="rounded-circle" width="32" height="32" />
+                                        <a href="{{ .Site.Author.homepage }}">{{ .Site.Author.name }}</a> | <time>{{ .Date.Format "02-01-2006" }}</time>
+                                    </div>
+
+                                    <h2 class="card-title mb-3">{{ .Title }}</h2>
+                                    
+                                    <div class="valign-wrapper">
+                                        <i class="material-icons grey-text text-lighten-2">label </i>
+                                        <div class="col s12 valign-wrapper">
+                                            {{ range .Params.tags }}
+                                            <span class="badge-hashtag blue-grey darken-3">
+                                                <a class="text-white" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a>
+                                            </span>
+                                            {{ end }}
+                                        </div>
+                        
+                                    </div>
+                                    <span class='list'></span>
+                                    <br>
+
+                                </div>
+                                <div class="post-content">
+                                    {{ .Content }}
+                                </div>
+                                <div class="post-footer">
+                                    {{ partial "disqus.html" . }}
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-4">
+                       {{ partial "aside.html" . }}
+                    </div>
+            </div>
+        </div>
+
+        {{ partial "footer.html" . }}
+        {{ partial "js-init.html" . }}
+    </body>
+</html>

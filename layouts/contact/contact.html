@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+    <body>
+
+        {{ partial "nav-single.html" . }}
+
+        <div class="container">
+            <div class="row">
+                <article>
+                    <div class="card">
+                       <div class="card-content p-md-5">
+                            
+                           <div class="post-header row">
+                                <h1 class="card-title col l12">{{ .Language.Params.contact }} : </h1>
+                                
+                                <div>
+                                    {{ range .Params.tags }}
+                                    <span class="badge badge-success">
+                                         #<a class="text-white" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                                    </span> 
+                                    {{ end }}
+                                </div>
+
+                            </div>
+                            <div class="post-content row">
+                                    <div class="col l12">
+                                            {{ .Content }} 
+                                    </div>
+
+                               <br><br>
+
+                               <div class="col l5 s12">
+                                    <h6 class="grey-text">{{.Language.Params.connectme}} </h6>
+                                    <ul class="no-style">
+                                        <li>
+                                            <a class="grey-text text-lighten-1" href="https://www.youtube.com/haerulmuttaqin">
+                                                Youtube</a>
+                                            &nbsp;
+                                            <a class="grey-text text-lighten-1" href="https://twitter.com/haerulmuttaqin">
+                                                Twitter</a>
+                                            &nbsp;
+                                            <a class="grey-text text-lighten-1" href="https://www.linkedin.com/in/haerulmuttaqin/">
+                                                Linkedin</a>
+                                        </li>
+                                        <li><a class="grey-text text-lighten-1" href="https://www.facebook.com/muttaqinhaerul">
+                                                Facebook
+                                                &nbsp;
+                                                <a class="grey-text text-lighten-1" href="https://www.instagram.com/haerulmuttaqin.id/">
+                                                    Instagram
+                                                </a>
+                                            </a></li>
+                                        <li><br>
+                                            <a class="github-button" href="https://github.com/haerulmuttaqin" aria-label="Follow @haerulmuttaqin on GitHub">Follow
+                                                @haerulmuttaqin</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                                <form action="https://formspree.io/haerul.muttaqin@gmail.com" method="POST" 
+                                class="col l7 s12">
+                                   <div class="row">
+                                    <div class="input-field col l6 m6 s12">
+                                        <input id="name" type="text" name="name" class="validate">
+                                        <label for="name">Name</label>
+                                    </div>
+                                    <div class="input-field field-blue col l6 m6 s12">
+                                        <input id="email" type="email" name="email" class="validate">
+                                        <label for="email">Email</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <textarea id="textarea1" name="message" class="materialize-textarea"></textarea>
+                                        <label for="textarea1">Message</label>
+                                    </div>
+                                    <button class="btn waves-effect waves-light blue right" 
+                                    type="submit" name="action">
+                                            {{.Language.Params.submit}}
+                                            <i class="material-icons right">send</i>
+                                    </button>
+                                   </div>
+                                </form>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        {{ partial "footer.html" . }}
+        {{ partial "js-init.html" . }}
+    </body>
+</html>

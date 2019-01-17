@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {{ partial "head.html" . }}
+</head>
+
+<body>
+
+    {{ partial "nav-single.html" . }}
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col m8 s12">
+                <br>
+                <div class="post-header">
+
+                        <div class="grey-text">
+                                {{.Language.Params.updateby}} <a class="grey-text" href="{{ .Site.Author.homepage }}">{{ .Site.Author.name }}</a> &centerdot; <time>{{ .Date.Format "02 January 2006" }}</time>
+                        </div>
+
+                    <h1 class="post-title">{{ .Title }}</h1>
+
+                    <div class="valign-wrapper">
+                        <i class="material-icons grey-text text-lighten-2">label </i>
+                        <div class="col s12 valign-wrapper">
+                            {{ range .Params.tags }}
+                            <span class="badge-hashtag blue-grey darken-3">
+                                <a class="text-white" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a>
+                            </span>
+                            {{ end }}
+                        </div>
+        
+                    </div>
+                    <span class='list'></span>
+                    <br>
+
+                </div>
+                <div class="post-content flow-text">
+                    {{ .Content }}
+                </div>
+
+                <span class="list"></span>
+                <br>
+
+                <div class="post-footer">
+                    {{ partial "disqus.html" . }}
+                </div>
+
+            </div>
+
+            <div class="col m4 s12">
+                {{ partial "aside.html" . }}
+            </div>
+
+        </div>
+    </div>
+
+    {{ partial "footer.html" . }}
+    {{ partial "js-init.html" . }}
+</body>
+
+</html>

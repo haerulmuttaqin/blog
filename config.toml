@@ -1,0 +1,84 @@
+# Agar front-matter pakai format YAML
+MetaDataFormat = "yaml"
+baseURL = "https://haerulmuttaqin.site"
+# untuk apply temanya
+# themesDir = "themes"
+# theme = "haerul-theme"
+
+# Shortname disqus, silahkan sesuaikan
+DisqusShortname = "https-haerulmuttaqin-site"
+
+# Untuk Google Analytic, silahkan sesuikan
+googleAnalytics = ""
+
+# Biodata Author
+[author]
+    name = "Haerul Muttaqin"
+    bio = "Android And Web Developer"
+    image = "https://avatars2.githubusercontent.com/u/16528528?s=460&v=4"
+
+# [permalinks]
+#     post = "blog/:slug/"
+#     page = ":slug/"
+
+# [params]
+    #  isProduction = true
+
+    # Site Author
+    author = "Haerul Muttaqin"
+
+    # Description/subtitle for homepage
+    description = "Hello, saya Haerul Muttaqin."
+
+    # When using mulitlingual website, disable the switch language button.
+    # disableLanguageSwitchingButton = true
+
+# English is the default language
+defaultContentLanguage = "id"
+# Force to have /en/my-page and /fr/my-page routes, even for default language.
+# defaultContentLanguageInSubdir = false
+
+[Languages]
+[Languages.id]
+title = "Haerul Muttaqin"
+weight = 0
+languageName = "ID"
+description = "Tutorial Belajar Pemrograman"
+    [Languages.id.params]
+    icon = "/img/id.png"
+    blog = "Blog"
+    about = "Tentang"
+    contact = "Kontak"
+    titlebio = "Biografi saya"
+    bio = "Saya orang biasa yang mengerjakan proyek ini, ini pekerjaan saya yang menyenangkan. Saya harap pembaca dapat memahami penjelasan saya."
+    getstarted = "Memulai"
+    lastpost = "Posting Terbaru"
+    seeall = "LIHAT SEMUA"
+    readmore = "BACA LEBIH LANJUT"
+    updateby = "Diperbarui oleh"
+    connect = "Terhubung"
+    tag = "Tag"
+    connectme = "Terhubung dengan Saya,"
+    submit = "Kirim"
+
+[Languages.en]
+title = "Haerul Muttaqin"
+weight = 1
+languageName = "EN"
+description = "Programming Tutorial"
+    [Languages.en.params]
+    icon = "/img/en.png"
+    blog = "Blog"
+    about = "About"
+    contact = "Contact"
+    titlebio = "My biography"
+    bio = "I am an ordinary person working on this project, this is my fun job. I hope the reader can understand my-explanation."
+    getstarted = "Get Started"
+    lastpost = "Last Post"
+    seeall = "SEE ALL"
+    readmore = "READ MORE"
+    updateby = "Update by"
+    connect = "Connect"
+    tag = "Tags"
+    connectme = "Connect with Me at,"
+    submit = "Submit"
